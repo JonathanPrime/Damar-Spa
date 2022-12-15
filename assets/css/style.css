@@ -1020,6 +1020,28 @@ footer ul li {
     color: var(--palet-1);
 }
 
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.loader-container img {
+    height: 291px;
+    width: 441px;
+}
+
+.loader-container.fade-out {
+    top: -120%;
+}
+
 /* WHATSAPP BUTTON */
 /* BUTTON WHATSAPP */
 @keyframes pulse {
@@ -1328,9 +1350,11 @@ input.whats-input[type=text]:focus {
     .about {
         background-size: 25%, 25% !important;
     }
+
     .ms_contact_section {
         background-size: 25%, 25% !important;
     }
+
     .home {
         flex-direction: column;
     }

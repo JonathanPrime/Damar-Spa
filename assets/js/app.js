@@ -114,4 +114,16 @@ popupWhatsApp = () => {
 
 }
 
+window.onload=function () {
+  fadeOut();
+}
+
+function fadeOut() {
+  setInterval(loader, 3000);
+}
+
+function loader() {
+  document.querySelector('.loader-container').classList.add('fade-out');
+}
+
 popupWhatsApp();
