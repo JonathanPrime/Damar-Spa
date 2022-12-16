@@ -1356,7 +1356,23 @@ input.whats-input[type=text]:focus {
     }
 
     .home {
-        flex-direction: column;
+        background: none;
+    }
+
+    .home-1 {
+        width: 100%;
+        min-height: 100vh;
+        padding: 9rem 9% !important;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        z-index: 1;
+        background: url(../images/slides/banner-ver-01.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        justify-items: center;
+        flex-direction: column !important;
+        justify-content: space-evenly;
     }
 
     .home-text {
